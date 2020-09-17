@@ -1,5 +1,5 @@
 ---
-title: "p8105_problem0.1"
+title: "p8105_hw1_zl2977"
 author: "Zhourong Li zl2977"
 date: "2020/9/17"
 output: github_document
