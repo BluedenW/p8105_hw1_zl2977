@@ -73,7 +73,7 @@ the sex are {`r levels(penguins$sex)`},
 the start and end  of the year are {`r range(penguins$year,na.rm=T)`}. 
 The data set has `r nrow(penguins)` rows and `r ncol(penguins)` columns, 
 in total there are `r nrow(penguins)*ncol(penguins)` values in this data set. 
-The mean flipper length is `r mean(penguins$flipper_length_mm,na.rm=T)`.
+The mean flipper length is `r mean(pull(penguins,flipper_length_mm),na.rm=T)`.
 
 ```{r plot_df}
 
