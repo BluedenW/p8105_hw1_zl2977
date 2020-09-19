@@ -30,7 +30,6 @@ prob1_df=
      char_vec=c("a","b","c","d","e","f","g","h","i","j"),
      factor_vec=factor(c("low","low","low","mod","mod","mod","mod","high","high","high"))
    )
-prob1_df
 ```
 Take the mean of each variable in my data frame.
 
