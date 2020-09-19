@@ -65,7 +65,7 @@ data("penguins", package = "palmerpenguins")
 
 The names in this data are `r names(penguins)`. The species are `r levels(penguins$species)`, the islands are `r levels(penguins$island)`, the minimum and maximum  of the bill_length_mm are {`r range(penguins$bill_length_mm,na.rm=T)`}, the minimum and maximum  of the bill_depth_mm are {`r range(penguins$bill_depth_mm,na.rm=T)`}, the minimum and maximum  of the flipper_length_mm are {`r range(penguins$flipper_length_mm,na.rm=T)`}, the minimum and maximum  of the body_mass_g are {`r range(penguins$body_mass_g,na.rm=T)`}, the sex are {`r levels(penguins$sex)`}, the start and end  of the year are {`r range(penguins$year,na.rm=T)`}. the data set has `r nrow(penguins)` rows and `r ncol(penguins)` columns, in total there are `r nrow(penguins)*ncol(penguins)` values in this data set. The mean flipper length is `r mean(penguins$flipper_length_mm,na.rm=T)`.
 
-```{r plot_data}
+```{r plot_df}
 
 plot_data<-data.frame(
   bill_length_mm=penguins$bill_length_mm,
