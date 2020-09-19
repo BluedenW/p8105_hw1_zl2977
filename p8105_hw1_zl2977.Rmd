@@ -78,10 +78,11 @@ The mean flipper length is `r mean(pull(penguins,flipper_length_mm),na.rm=T)`.
 
 plot_data<-data.frame(
   bill_length_mm=pull(penguins,bill_length_mm),
-  flipper_length_mm=pull(penguins,flipper_length_mm)
+  flipper_length_mm=pull(penguins,flipper_length_mm),
+  species=pull(penguins,species)
 )
 
-ggplot(plot_data,aes(x=bill_length_mm, y=flipper_length_mm, color=pull(penguins,species)))+
+ggplot(plot_data,aes(x=bill_length_mm, y=flipper_length_mm, color=species))+
   geom_point(size=2,shape=19)
 ggsave("plot_data.png")
 ```
